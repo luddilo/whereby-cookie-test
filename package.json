@@ -1,0 +1,25 @@
+{
+  "name": "wherenext",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "deploy": "vercel --prod",
+    "both": "concurrently 'next dev' 'ngrok http 3000 -subdomain=narratory'",
+    "ngrok": "ngrok http 3000 -subdomain=narratory",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "next": "10.1.2",
+    "react": "17.0.2",
+    "react-cookie": "^4.0.3",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "concurrently": "^6.0.0",
+    "typescript": "^4.2.3"
+  }
+}
